@@ -5,7 +5,7 @@ from datetime import datetime
 
 from ..models.schemas import MeasurementData, AnalysisRequest, AnalysisResponse
 from ..services.stm32_service import stm32_service
-from ..services.ai_service import ai_service
+from ..services.gemini_service import gemini_service as ai_service
 from ..services.calculator import calculate_all_metrics
 from ..services.database import init_db, save_measurement, get_all_measurements, get_latest_measurement, get_measurement_by_id
 
